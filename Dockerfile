@@ -26,7 +26,7 @@ RUN chmod +x /usr/local/bin/dumb-init
 # ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
 # Install puppeteer so it's available in the container.
-RUN npm i puppeteer
+RUN npm i puppeteer@1.4.0-next.1526593919447
 
 # Add user so we don't need --no-sandbox.
 RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser \
